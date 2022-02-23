@@ -14,7 +14,14 @@ module.exports = {
         // 执行顺序从右往左，从上往下,顺序不能写错, postcss应该在css-loader之前工作（先把做兼容的东西加上，然后交给css-loader处理，在交给style-loader处理）
         use: [
           'style-loader',
-          'css-loader',
+          // 需要用对象单独设置
+          // 'css-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1
+            }
+          },
           'postcss-loader'
         ]
       },
