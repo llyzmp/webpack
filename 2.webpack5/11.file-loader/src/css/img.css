@@ -2,5 +2,5 @@
   width: 240px;
   height: 310px;
   border: 1px solid #000;
-  background-image: url('../img/02.react.png');
+  background-image: url('../img/02.react.png');   /* css-loader会把url替换为require,使用esModule语法打包，在webpack 的css-loader中设置esModule: false*/
 }
