@@ -1,0 +1,2 @@
+# assets-module-type
+
