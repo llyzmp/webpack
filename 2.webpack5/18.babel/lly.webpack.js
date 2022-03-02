@@ -5,6 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
+  mode: 'development',
   entry: './src/index.js',
   output: {
     // 添加个js目录
