@@ -65,6 +65,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
+        exclude: /node_modules/, // node_module里边的东西去除掉，不被当前loader处理
         use: ['babel-loader'] // 使用单独文件配置babel.config.js
       }
     ]
